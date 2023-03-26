@@ -14,6 +14,7 @@
 		2767035E29CD94E60010B6EA /* DiamemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2767035D29CD94E60010B6EA /* DiamemoryTests.swift */; };
 		2767036829CD94E60010B6EA /* DiamemoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2767036729CD94E60010B6EA /* DiamemoryUITests.swift */; };
 		2767036A29CD94E60010B6EA /* DiamemoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2767036929CD94E60010B6EA /* DiamemoryUITestsLaunchTests.swift */; };
+		2767037729D095890010B6EA /* InputDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2767037629D095890010B6EA /* InputDiaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2767036329CD94E60010B6EA /* DiamemoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiamemoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2767036729CD94E60010B6EA /* DiamemoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamemoryUITests.swift; sourceTree = "<group>"; };
 		2767036929CD94E60010B6EA /* DiamemoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamemoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2767037629D095890010B6EA /* InputDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDiaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				2767034C29CD94E30010B6EA /* DiamemoryApp.swift */,
 				2767034E29CD94E30010B6EA /* ContentView.swift */,
+				2767037629D095890010B6EA /* InputDiaryView.swift */,
 				2767035029CD94E50010B6EA /* Assets.xcassets */,
 				2767035229CD94E60010B6EA /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				2767034F29CD94E30010B6EA /* ContentView.swift in Sources */,
 				2767034D29CD94E30010B6EA /* DiamemoryApp.swift in Sources */,
+				2767037729D095890010B6EA /* InputDiaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
