@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		27170D2E29DEB7EF0067DFA4 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27170D2D29DEB7EF0067DFA4 /* RecordButton.swift */; };
+		27170D3029E02F420067DFA4 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27170D2F29E02F420067DFA4 /* TabBarView.swift */; };
+		27170D3229E0326E0067DFA4 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27170D3129E0326E0067DFA4 /* TaskView.swift */; };
+		27170D3429E032880067DFA4 /* PastDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27170D3329E032880067DFA4 /* PastDiaryView.swift */; };
 		2767034D29CD94E30010B6EA /* DiamemoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2767034C29CD94E30010B6EA /* DiamemoryApp.swift */; };
 		2767034F29CD94E30010B6EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2767034E29CD94E30010B6EA /* ContentView.swift */; };
 		2767035129CD94E50010B6EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2767035029CD94E50010B6EA /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		27170D2D29DEB7EF0067DFA4 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		27170D2F29E02F420067DFA4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		27170D3129E0326E0067DFA4 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		27170D3329E032880067DFA4 /* PastDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastDiaryView.swift; sourceTree = "<group>"; };
 		2767034929CD94E30010B6EA /* Diamemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diamemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2767034C29CD94E30010B6EA /* DiamemoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamemoryApp.swift; sourceTree = "<group>"; };
 		2767034E29CD94E30010B6EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 				2767034E29CD94E30010B6EA /* ContentView.swift */,
 				2767037629D095890010B6EA /* InputDiaryView.swift */,
 				27170D2D29DEB7EF0067DFA4 /* RecordButton.swift */,
+				27170D2F29E02F420067DFA4 /* TabBarView.swift */,
+				27170D3129E0326E0067DFA4 /* TaskView.swift */,
+				27170D3329E032880067DFA4 /* PastDiaryView.swift */,
 				2767035029CD94E50010B6EA /* Assets.xcassets */,
 				2767038029D5465F0010B6EA /* Main.storyboard */,
 				2767035229CD94E60010B6EA /* Preview Content */,
@@ -270,6 +279,9 @@
 				27170D2E29DEB7EF0067DFA4 /* RecordButton.swift in Sources */,
 				2767034F29CD94E30010B6EA /* ContentView.swift in Sources */,
 				2767034D29CD94E30010B6EA /* DiamemoryApp.swift in Sources */,
+				27170D3229E0326E0067DFA4 /* TaskView.swift in Sources */,
+				27170D3429E032880067DFA4 /* PastDiaryView.swift in Sources */,
+				27170D3029E02F420067DFA4 /* TabBarView.swift in Sources */,
 				2767037729D095890010B6EA /* InputDiaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

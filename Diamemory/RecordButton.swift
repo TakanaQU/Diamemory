@@ -14,58 +14,65 @@ struct RecordButton: View {
     @State private var degree: Int = 270
 
     var body: some View {
-        ZStack {
-            Circle()
-                .stroke(Color(red:0.8, green:0.8, blue:0.8, opacity: 1),lineWidth: 4)
-                .frame(width: size, height: size)
-            
-            if isRecording {
-                Image(systemName: "stop.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: size * 0.4, height: size * 0.4)
-                    .clipped()
-                    .foregroundColor(Color.red)
-                    //.foregroundColor(color())
-                
+        VStack {
+            Text("Hello")
+                .padding()
+            Spacer()
+            ZStack {
                 Circle()
-                    .trim(from: 0.0, to: 0.25)
-                    .stroke(style: StrokeStyle(lineWidth: 4.0, lineCap: .round, lineJoin: .round))
+                    .stroke(Color(red:0.8, green:0.8, blue:0.8, opacity: 1),lineWidth: 4)
                     .frame(width: size, height: size)
-                    .rotationEffect(Angle(degrees: Double(degree)))
-                    .animation(Animation.linear(duration: 2).repeatForever(autoreverses: false))
-                    .onAppear {
-                        rotate()
-                    }
-                    .foregroundColor(Color.red)
-            } else {
-                Image(systemName: "circle.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: size * 0.8, height: size * 0.8)
-                    .clipped()
-                    //.foregroundColor(color())
-                    .foregroundColor(Color.red)
-
-            /*Circle()
-                .fill(isRecording ? Color.red : Color.white)
-                .frame(width: 70, height: 70)
-                .shadow(radius: 5)
-            Circle()
-                .fill(isRecording ? Color.white : Color.red)
-                .frame(width: 60, height: 60)
-                .scaleEffect(isRecording ? 1.2 : 1.0)
-            Image(systemName: "mic.fill")
-                .resizable()
-                .scaledToFit()
-                .foregroundColor(isRecording ? Color.white : Color.red)
-                .frame(width: 30, height: 30)*/
                 
+                if isRecording {
+                    Image(systemName: "stop.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: size * 0.4, height: size * 0.4)
+                        .clipped()
+                        .foregroundColor(Color.red)
+                        //.foregroundColor(color())
+                    
+                    Circle()
+                        .trim(from: 0.0, to: 0.25)
+                        .stroke(style: StrokeStyle(lineWidth: 4.0, lineCap: .round, lineJoin: .round))
+                        .frame(width: size, height: size)
+                        .rotationEffect(Angle(degrees: Double(degree)))
+                        .animation(Animation.linear(duration: 2).repeatForever(autoreverses: false))
+                        .onAppear {
+                            rotate()
+                        }
+                        .foregroundColor(Color.red)
+                } else {
+                    Image(systemName: "circle.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: size * 0.8, height: size * 0.8)
+                        .clipped()
+                        //.foregroundColor(color())
+                        .foregroundColor(Color.red)
+
+                /*Circle()
+                    .fill(isRecording ? Color.red : Color.white)
+                    .frame(width: 70, height: 70)
+                    .shadow(radius: 5)
+                Circle()
+                    .fill(isRecording ? Color.white : Color.red)
+                    .frame(width: 60, height: 60)
+                    .scaleEffect(isRecording ? 1.2 : 1.0)
+                Image(systemName: "mic.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundColor(isRecording ? Color.white : Color.red)
+                    .frame(width: 30, height: 30)*/
+                    
+                }
             }
+            .onTapGesture {
+                isRecording.toggle()
+            }
+            Text("https://uruly.xyz/swift3_uitabbar_menu/を見て下部メニューを作れ")
         }
-        .onTapGesture {
-            isRecording.toggle()
-        }
+        
         
     }
     func rotate() {
