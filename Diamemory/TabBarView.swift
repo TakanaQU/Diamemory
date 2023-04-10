@@ -24,12 +24,13 @@ struct TabBarView: View {
             PastDiaryView()
                 .tabItem {
                     Image(systemName: "book.fill")
-                    Text("日記帳")
+                    Text("日記帳だけど画面外の背景色まで変わってしまってんで")
                 }
         }
         //Color("PaleBlue")
         .accentColor(Color("DarkBlue"))
         //.foregroundColor(Color.brown) Text in all view get brown
+        
     }
 }
 
