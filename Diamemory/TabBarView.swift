@@ -29,7 +29,7 @@ struct TabBarView: View {
         }
         //Color("PaleBlue")
         .accentColor(Color("DarkBlue"))
-        //.foregroundColor(Color.brown) Text in all view get brown
+        //.foregroundColor(Color.brown) //Text in all view get brown
         
     }
 }

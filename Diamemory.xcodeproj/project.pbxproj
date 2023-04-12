@@ -20,6 +20,7 @@
 		2767036A29CD94E60010B6EA /* DiamemoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2767036929CD94E60010B6EA /* DiamemoryUITestsLaunchTests.swift */; };
 		2767037729D095890010B6EA /* InputDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2767037629D095890010B6EA /* InputDiaryView.swift */; };
 		2767038129D5465F0010B6EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2767038029D5465F0010B6EA /* Main.storyboard */; };
+		27E2DA3A29E68E79009B12B1 /* ConfirmTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E2DA3929E68E79009B12B1 /* ConfirmTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		2767036929CD94E60010B6EA /* DiamemoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamemoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2767037629D095890010B6EA /* InputDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDiaryView.swift; sourceTree = "<group>"; };
 		2767038029D5465F0010B6EA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		27E2DA3929E68E79009B12B1 /* ConfirmTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				27170D2D29DEB7EF0067DFA4 /* RecordButton.swift */,
 				27170D2F29E02F420067DFA4 /* TabBarView.swift */,
 				27170D3129E0326E0067DFA4 /* TaskView.swift */,
+				27E2DA3929E68E79009B12B1 /* ConfirmTaskView.swift */,
 				27170D3329E032880067DFA4 /* PastDiaryView.swift */,
 				2767035029CD94E50010B6EA /* Assets.xcassets */,
 				2767038029D5465F0010B6EA /* Main.storyboard */,
@@ -280,6 +283,7 @@
 				2767034F29CD94E30010B6EA /* ContentView.swift in Sources */,
 				2767034D29CD94E30010B6EA /* DiamemoryApp.swift in Sources */,
 				27170D3229E0326E0067DFA4 /* TaskView.swift in Sources */,
+				27E2DA3A29E68E79009B12B1 /* ConfirmTaskView.swift in Sources */,
 				27170D3429E032880067DFA4 /* PastDiaryView.swift in Sources */,
 				27170D3029E02F420067DFA4 /* TabBarView.swift in Sources */,
 				2767037729D095890010B6EA /* InputDiaryView.swift in Sources */,

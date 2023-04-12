@@ -20,7 +20,7 @@ struct CheckBoxToggleStyle:ToggleStyle{
                 .accentColor(Color("DarkBlue"))
                 //Spacer()
                 configuration.label
-                    .accentColor(Color("DarkBlue"))
+                    .accentColor(.black)
             }
         }
     }
@@ -29,14 +29,18 @@ struct CheckBoxToggleStyle:ToggleStyle{
 struct TaskView: View {
     @State var toggle = false
     var body: some View {
-        NavigationView {//NavigationViewはiOS16から非推奨らしい
-            List{
-                Text("めちゃめちゃ") + Text("りんご買う")
-                Toggle("なすび買う", isOn: $toggle)
-                  .toggleStyle(CheckBoxToggleStyle())
-                Text("電気代支払い")
+        if #available(iOS 16.0, *) {
+            NavigationStack {//NavigationViewはiOS16から非推奨らしい
+                List{
+                    Text("めちゃめちゃ") + Text("りんご買う")
+                    Toggle("なすび買う", isOn: $toggle)
+                        .toggleStyle(CheckBoxToggleStyle())
+                    Text("電気代支払い")
+                }
+                .navigationTitle("タスク一覧")
             }
-            .navigationTitle("タスク一覧")
+        } else {
+            // Fallback on earlier versions
         }
     }
 }

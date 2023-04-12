@@ -6,6 +6,24 @@
 //
 
 import SwiftUI
+import UIKit
+import Speech
+
+
+public class ViewController: UIViewController, SFSpeechRecognizerDelegate {
+    // MARK: Properties
+    
+    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))!
+    
+    private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
+    
+    private var recognitionTask: SFSpeechRecognitionTask?
+    
+    private let audioEngine = AVAudioEngine()
+    
+    
+}
+
 
 struct RecordButton: View {
     @State var isRecording: Bool
@@ -70,7 +88,6 @@ struct RecordButton: View {
             .onTapGesture {
                 isRecording.toggle()
             }
-            Text("https://uruly.xyz/swift3_uitabbar_menu/を見て下部メニューを作れ")
         }
         
         
@@ -83,6 +100,8 @@ struct RecordButton: View {
         return isRecording ? Color.green : Color.red
     }*/
 }
+
+
 
         
         /*
