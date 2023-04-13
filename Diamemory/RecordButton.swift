@@ -33,9 +33,7 @@ struct RecordButton: View {
 
     var body: some View {
         VStack {
-            Text("Hello")
-                .padding()
-            Spacer()
+            
             ZStack {
                 Circle()
                     .stroke(Color(red:0.8, green:0.8, blue:0.8, opacity: 1),lineWidth: 4)
@@ -103,6 +101,23 @@ struct RecordButton: View {
 
 
 
+struct InputText: View {
+    @State private var content = ""
+    var body: some View {
+        VStack {
+            //Spacer().frame(height: 100)
+            
+            TextField("今日は何がありましたか？", text: $content)
+                .padding()
+            Text("\(content)")
+                .padding()
+            
+            Spacer()
+        }
+    }
+}
+
+
         
         /*
         ZStack {
@@ -155,6 +170,12 @@ struct RecordButton_Previews: PreviewProvider {
             Spacer()
             RecordButton(isRecording: true)
         }.padding(.all)*/
-        RecordButton(isRecording: false)
+        VStack {
+            InputText()
+            Spacer()
+            Text("Haaa")
+            Spacer()
+            RecordButton(isRecording: false)
+        }
     }
 }
